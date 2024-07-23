@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Yorqin pastel rang */
+    display: flex;
+    flex-direction: column; /* Vertikal joylashish */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #00796b; /* Chiroyli yashil rang */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* Sarlavha uchun oq fon */
+    padding: 15px;
+    z-index: 10; /* Sarlavhani yuqori qilish */
+    border-bottom: 2px solid #004d40; /* Qora-yashil rangli chegara */
+    width: 100%;
+    text-align: center;
+}
+
+ul.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff; /* Toza oq fon */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li.wrapper {
+    width: 100%; /* Elementlarni kengaytiradi */
+    max-width: 500px; /* Maksimal kengligi */
+    padding: 20px;
+    border-bottom: 1px solid #b2dfdb; /* Yashil rangli chegaralar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b2dfdb; /* Yashil rangli orqa fon */
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+li.wrapper:hover {
+    background: #004d40; /* Qora-yashil rangda fon */
+    color: #ffffff; /* Oq matn rangi */
+    transform: scale(1.02); /* O'lchamni biroz kattalashtirish */
+}
+
+li.wrapper:hover .arabic {
+    color: #ffffff; /* Hover holatida arab matnining rangi oq bo'ladi */
+}
+
+li.wrapper:last-child {
+    border-bottom: none;
+}
+
+span.arabic {
+    font-size: 24px;
+    color: #004d40; /* Qora-yashil rang */
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    direction: rtl;
+    font-family: 'Traditional Arabic', sans-serif;
+}
+
+span.latin {
+    font-size: 18px;
+    color: #00796b; /* Chiroyli yashil rang */
+    text-align: center;
+    display: block;
+    direction: ltr;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    span.arabic {
+        font-size: 20px;
+    }
+
+    span.latin {
+        font-size: 16px;
+    }
+}
